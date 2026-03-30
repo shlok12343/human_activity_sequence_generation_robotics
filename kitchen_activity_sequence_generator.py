@@ -8,6 +8,7 @@ from pydantic import BaseModel, Field
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
+from build_process_dag import build_and_render_process_dag
 
 load_dotenv()
 
@@ -39,13 +40,15 @@ def build_chain(model_name: str = "gemini-3.1-pro-preview", temperature: float =
                 "human",
                 (
                     "Normative sequence:\n{base_sequence}\n\n"
+                    "Target object:\n{target_object}\n\n"
                     "World knowledge / affordance rules:\n{affordance_rules}\n\n"
                     "Generate exactly {num_sequences} alternative sequences.\n"
                     "Include a mix of:\n"
-                    "- Optimal/Efficient versions (fewer steps)\n"
-                    "- Hazardous versions (e.g., leaving fridge open, leaving stove on)\n"
-                    "- Alternate-order versions (e.g., eating raw vs cooked)\n\n"
-                    "Keep all steps focused on manipulations around one object flow in a kitchen.\n\n"
+                    "- fewer steps versions\n"
+                    "- Hazardous versions\n"
+                    "- Alternate-order versions\n\n"
+                    "- edge cases versions\n"
+                    "All steps must stay focused on manipulations around the target object in a kitchen.\n\n"
                     "{format_instructions}"
                 ),
             ),
@@ -60,6 +63,7 @@ def build_chain(model_name: str = "gemini-3.1-pro-preview", temperature: float =
 def generate_sequences(
     base_sequence: List[str],
     affordance_rules: List[str],
+    target_object: str,
     num_sequences: int = 6,
 ) -> ActivitySequences:
     """Run the chain and return parsed activity sequences."""
@@ -69,6 +73,7 @@ def generate_sequences(
         {
             "base_sequence": base_sequence,
             "affordance_rules": affordance_rules,
+            "target_object": target_object,
             "num_sequences": num_sequences,
             "format_instructions": parser.get_format_instructions(),
         }
@@ -91,7 +96,7 @@ def main() -> None:
             "GOOGLE_API_KEY is not set. Export it before running this script."
         )
 
-    base_sequence = [
+    base_sequence_vegetables = [
         "Open Fridge",
         "Take out vegetables",
         "Close Fridge",
@@ -103,7 +108,7 @@ def main() -> None:
         "Eat vegetables",
     ]
 
-    affordance_rules = [
+    affordance_rules_vegetables = [
         "Fridge must be open to interact with contents",
         "Vegetables can be eaten raw or cooked",
         "Fridge must be opened before closed",
@@ -111,17 +116,79 @@ def main() -> None:
         "Humans can eat all vegetables",
     ]
 
-    object = "vegetables"
+    target_object_vegetables = "vegetables"
+
+
+    base_sequence_knives = [
+    "open drawer",
+    "Remove knife from block",
+    "Place vegetable on board",
+    "Slice vegetable",
+    "Wipe blade",
+    "Wash knife",
+    "Dry knife",
+    "Return knife to block" 
+    "close drawer",
+    ]
+
+    affordance_rules_knives = [
+        "Drawer must be open to reach knives",
+        "Drawer must be open before it can be closed",
+        "Knife must be removed from storage before slicing",
+        "You can not dry kife before washing it"
+    ]
+
+    target_object_knives = "knives"
+
+    base_sequence_proteins = [
+    "open fridge",
+    "take out protein",
+    "close fridge",
+    "Remove protein from packaging",
+    "Pat protein dry",
+    "Cut protein into pieces",
+    "Place protein in hot pan",
+    "Wash hands with soap and water",
+    "cook protein",
+    "Remove protein from heat",
+    "Let protein rest",
+    "eat protein"
+    ]
+
+    affordance_rules_proteins = [
+        "Protien can not be cut before being removed from packaging"
+        "Protien can not be removed from packaging before being removed from fridge"
+    ]
+    target_object_proteins = "protein"
 
 
 
+
+    # result = generate_sequences(
+    #     base_sequence=base_sequence_proteins,
+    #     affordance_rules=affordance_rules_proteins,
+    #     target_object=target_object_proteins,
+    #     num_sequences=15,
+    # )
 
     result = generate_sequences(
-        base_sequence=base_sequence,
-        affordance_rules=affordance_rules,
-        num_sequences=6,
-    )
+        base_sequence=base_sequence_vegetables,
+        affordance_rules=affordance_rules_vegetables,
+        target_object=target_object_vegetables,
+        num_sequences=15,)
+    
+    # result = generate_sequences(
+    #     base_sequence=base_sequence_knives,
+    #     affordance_rules=affordance_rules_knives,
+    #     target_object=target_object_knives,
+    #     num_sequences=15,)
+
+
+
+
     print_sequences(result)
+    output_path = build_and_render_process_dag(result.sequences, out_name="process_dag")
+    print(f"DAG saved to: {output_path}")
 
 
 if __name__ == "__main__":
