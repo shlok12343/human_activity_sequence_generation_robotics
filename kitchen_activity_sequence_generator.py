@@ -60,7 +60,7 @@ def build_chain(model_name: str = "gemini-3.1-pro-preview", temperature: float =
     return chain, parser
 
 
-def generate_sequences(
+def generate_sequences_object(
     base_sequence: List[str],
     affordance_rules: List[str],
     target_object: str,
@@ -163,28 +163,110 @@ def main() -> None:
 
 
 
+    base_sequence_oven= [
+        "Utensils on countertop",
+        "Oven on",
+        "Utensils in oven",
+        "Oven Used",
+        "Oven Off",
+        "Utensils removed from Oven",
+        "Utensils placed on countertop",
+    ]
 
-    # result = generate_sequences(
+    affordance_rules_oven = [
+        "Oven must be on to reach Oven Used state",
+        "Utensils must be in oven before they can be removed from oven",
+    ]
+
+    target_object_oven = "oven"
+
+
+    base_sequence_dishwasher = [
+        "Add Dishes to Dishwasher",
+        "Dishwasher is on",
+        "Add Dishwasher Detergent",
+        "Run the dishwasher",
+        "remove dishes",
+    ]
+
+    affordance_rules_dishwasher = [
+        "remove dishes can only be done after the dishes are added to the dishwasher"
+    ]
+
+    target_object_dishwasher = "dishwasher"
+
+
+    base_sequence_liquids = [
+        "open fridge",
+        "Get Liquid",
+        "Remove Liquids",
+        "close fridge",
+        "Pour Liquid",
+        "open fridge",
+        "Put back Liquid",
+        "close fridge",
+    ]
+
+    affordance_rules_liquids = [
+        "Liquid can only be removed from fridge or cabinet before it can be poured",
+        "Liquid can only be poured after it is removed from fridge or cabinet",
+    ]
+
+    target_object_liquids = "liquids"
+
+  
+    base_sequence_dairy_ingredients = [
+        "Open Fridge",
+        "Remove Ingredients",
+        "Use Ingredients",
+        "Put back the ingredients",
+        "Close Fridge",
+    ]
+
+    affordance_rules_dairy_ingredients = [
+        "Items must be removed before the put back",
+        "Fridge cannot be closed until all items are put back",
+        "Dairy products cannot be used if they are still inside the fridge",
+    ]
+
+    target_object_dairy_ingredients = "dairy_ingredients"
+
+    # result = generate_sequences_object(
     #     base_sequence=base_sequence_proteins,
     #     affordance_rules=affordance_rules_proteins,
     #     target_object=target_object_proteins,
     #     num_sequences=15,
     # )
 
-    result = generate_sequences(
-        base_sequence=base_sequence_vegetables,
-        affordance_rules=affordance_rules_vegetables,
-        target_object=target_object_vegetables,
-        num_sequences=15,)
+    # result = generate_sequences_object(
+    #     base_sequence=base_sequence_vegetables,
+    #     affordance_rules=affordance_rules_vegetables,
+    #     target_object=target_object_vegetables,
+    #     num_sequences=15,)
     
-    # result = generate_sequences(
+    # result = generate_sequences_object(
+    #     base_sequence=base_sequence_oven,
+    #     affordance_rules=affordance_rules_oven,
+    #     target_object=target_object_oven,
+    #     num_sequences=15)
+
+    # result = generate_sequences_object(
+    #     base_sequence=base_sequence_dishwasher,
+    #     affordance_rules=affordance_rules_dishwasher,
+    #     target_object=target_object_dishwasher,
+    #     num_sequences=50)
+
+    result = generate_sequences_object(
+        base_sequence=base_sequence_liquids,
+        affordance_rules=affordance_rules_liquids,
+        target_object=target_object_liquids,
+        num_sequences=100)
+    
+    # result = generate_sequences_object(
     #     base_sequence=base_sequence_knives,
     #     affordance_rules=affordance_rules_knives,
     #     target_object=target_object_knives,
     #     num_sequences=15,)
-
-
-
 
     print_sequences(result)
     output_path = build_and_render_process_dag(result.sequences, out_name="process_dag")
