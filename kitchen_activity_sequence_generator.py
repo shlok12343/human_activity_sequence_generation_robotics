@@ -9,6 +9,7 @@ from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import ChatGoogleGenerativeAI
 from build_process_dag import build_and_render_process_dag
+from affordance_generator import generate_affordance_rules
 
 load_dotenv()
 
@@ -69,6 +70,56 @@ def generate_sequences_object(
     """Run the chain and return parsed activity sequences."""
     chain, parser = build_chain()
 
+    return chain.invoke(
+        {
+            "base_sequence": base_sequence,
+            "affordance_rules": affordance_rules,
+            "target_object": target_object,
+            "num_sequences": num_sequences,
+            "format_instructions": parser.get_format_instructions(),
+        }
+    )
+
+
+def generate_hazardous_sequences(
+    base_sequence: List[str],
+    affordance_rules: List[str],
+    target_object: str,
+    num_sequences: int = 6,
+) -> ActivitySequences:
+    """
+    Generate only hazardous variants of the activity sequence.
+
+    Every generated sequence is intentionally unsafe and should include at least
+    one clear safety violation for the target object workflow.
+    """
+    parser = PydanticOutputParser(pydantic_object=ActivitySequences)
+    prompt = ChatPromptTemplate.from_messages(
+        [
+            (
+                "system",
+                (
+                    "You are an expert in kitchen safety risk modeling.\n"
+                    "Generate hazardous human activity sequences only.\n"
+                    "Return ONLY JSON that matches the format instructions."
+                ),
+            ),
+            (
+                "human",
+                (
+                    "Normative sequence:\n{base_sequence}\n\n"
+                    "Target object:\n{target_object}\n\n"
+                    "World knowledge / affordance rules:\n{affordance_rules}\n\n"
+                    "Generate exactly {num_sequences} alternative sequences.\n"
+                    "CRITICAL: every sequence must be hazardous in nature.\n"
+                    "All steps must stay focused on manipulations around the target object in a kitchen.\n\n"
+                    "{format_instructions}"
+                ),
+            ),
+        ]
+    )
+    llm = ChatGoogleGenerativeAI(model="gemini-3.1-pro-preview", temperature=0.7)
+    chain = prompt | llm | parser
     return chain.invoke(
         {
             "base_sequence": base_sequence,
@@ -231,6 +282,75 @@ def main() -> None:
 
     target_object_dairy_ingredients = "dairy_ingredients"
 
+
+    base_sequence_kettle = [
+        "Fill Kettle",
+        "Heat On",
+        "Pour water",
+        "Heat Off",
+        "Turn off the kettle",
+    ]
+
+    affordance_rules_kettle = [
+        "Kettle must be filled before Heat is turned On",
+        "Heat must be On to reach Pour water state",
+        "Water cannot be poured if the kettle is currently at Heat On state",
+        "Sequence cannot terminate until Turn off the kettle is reached",
+    ]
+
+    target_object_kettle = "kettle"
+
+    base_sequence_toaster = [
+        "Insert Bread",
+        "Toaster On",
+        "Remove Bread",
+        "Power Off Toaster",
+        "Turn off Toaster",
+    ]
+
+    affordance_rules_toaster = [
+        "Bread must be inserted before Toaster is turned On",
+        "Toaster must be On to reach Remove Bread state",
+        "Toaster cannot be Power Off while Bread is still being toasted",
+        "Sequence must reach Turn off Toaster for safety completion",
+    ]
+
+    target_object_toaster = "toaster"
+
+    base_sequence_air_fryer = [
+        "Air fryer on",
+        "Air fryer used",
+        "Air fryer is off",
+        "Turn off the air fryer",
+    ]
+
+    affordance_rules_air_fryer = [
+        "Air fryer must be on before it can be used",
+        "Air fryer cannot be off while food is still being cooked (used state)",
+        "Air fryer must reach the 'is off' state before the final safety turn off",
+    ]
+
+    target_object_air_fryer = "air_fryer"
+
+    base_sequence_stove = [
+        "Utensils on Stove",
+        "Stove On",
+        "Stove Used",
+        "Stove Off",
+        "Utensils removed from Stove",
+        "Turn off the stove",
+    ]
+
+    affordance_rules_stove = [
+        "Utensils must be on Stove before Stove is turned On",
+        "Stove must be On to reach Stove Used state",
+        "Utensils cannot be removed from Stove while Stove is still On",
+        "Sequence must reach Turn off the stove to be physically complete",
+    ]
+
+    target_object_stove = "stove"
+
+
     # result = generate_sequences_object(
     #     base_sequence=base_sequence_proteins,
     #     affordance_rules=affordance_rules_proteins,
@@ -251,22 +371,37 @@ def main() -> None:
     #     num_sequences=15)
 
     # result = generate_sequences_object(
-    #     base_sequence=base_sequence_dishwasher,
+    #     base_sequence=base_sequence_dishwasher
     #     affordance_rules=affordance_rules_dishwasher,
     #     target_object=target_object_dishwasher,
     #     num_sequences=50)
 
-    result = generate_sequences_object(
-        base_sequence=base_sequence_liquids,
-        affordance_rules=affordance_rules_liquids,
-        target_object=target_object_liquids,
-        num_sequences=100)
+    # result = generate_hazardous_sequences(
+    #     base_sequence=base_sequence_oven,
+    #     affordance_rules=affordance_rules_oven,
+    #     target_object=target_object_oven,
+    #     num_sequences=15)
     
     # result = generate_sequences_object(
     #     base_sequence=base_sequence_knives,
     #     affordance_rules=affordance_rules_knives,
     #     target_object=target_object_knives,
     #     num_sequences=15,)
+
+    liquids_affordance_rules = generate_affordance_rules(
+        base_sequence=base_sequence_oven,
+        target_object=target_object_oven,
+        num_rules=10,
+    )
+
+
+    result = generate_sequences_object(
+        base_sequence=base_sequence_liquids,
+        affordance_rules=liquids_affordance_rules.affordance_rules,
+        target_object=target_object_liquids,
+        num_sequences=50,
+    )
+
 
     print_sequences(result)
     output_path = build_and_render_process_dag(result.sequences, out_name="process_dag")
