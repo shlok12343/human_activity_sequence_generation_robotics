@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Dict, List, Tuple
+from typing import Dict, List, Set, Tuple
 
 from graphviz import Digraph
 
@@ -162,6 +162,95 @@ def build_and_render_process_dag(
     trie_root = build_prefix_trie(sequences)
     root_id, dag_nodes = merge_equivalent_suffix_states(trie_root)
     return render_process_dag(root_id, dag_nodes, out_name=out_name)
+
+
+def _collect_edge_pairs(sequences: List[List[str]]) -> Set[Tuple[str, str]]:
+    """Collect directed step transitions as (from_step, to_step) pairs."""
+    edge_pairs: Set[Tuple[str, str]] = set()
+    for sequence in sequences:
+        previous = "START"
+        for step in sequence:
+            edge_pairs.add((previous, step))
+            previous = step
+    return edge_pairs
+
+
+def render_process_dag_with_colored_edges(
+    root_id: int,
+    dag_nodes: Dict[int, DagNode],
+    edge_colors: Dict[Tuple[str, str], str],
+    out_name: str,
+) -> str:
+    """
+    Render a process DAG with per-edge colors based on step-label transitions.
+
+    Expected edge_colors key format: (from_step_label, to_step_label) -> color.
+    """
+    dot = Digraph("process_dag_colored", format="png", engine="dot")
+    dot.attr(rankdir="TB")
+    dot.attr(
+        "node",
+        shape="box",
+        style="rounded,filled",
+        color="#4A5568",
+        fillcolor="#F7FAFC",
+        fontname="Helvetica",
+    )
+    dot.attr("edge", color="#000000")
+
+    reachable = set()
+    stack = [root_id]
+    while stack:
+        node_id = stack.pop()
+        if node_id in reachable:
+            continue
+        reachable.add(node_id)
+        stack.extend(child_id for _, child_id in dag_nodes[node_id].edges)
+
+    for node_id in sorted(reachable):
+        node = dag_nodes[node_id]
+        dot.node(f"n{node_id}", node.label)
+
+    for node_id in sorted(reachable):
+        node = dag_nodes[node_id]
+        for step_label, child_id in node.edges:
+            color = edge_colors.get((node.label, step_label), "#000000")
+            dot.edge(f"n{node_id}", f"n{child_id}", color=color)
+
+    return dot.render(filename=out_name, cleanup=True)
+
+
+def build_and_render_process_dag_with_colored_edges(
+    normal_sequences: List[List[str]],
+    hazardous_sequences: List[List[str]],
+    out_name: str = "process_dag_colored",
+) -> str:
+    """
+    Build and render a merged DAG with category-based edge coloring.
+
+    - Edges from normal sequences are colored black.
+    - Edges from hazardous sequences are colored red.
+    - If an edge appears in both, hazardous (red) takes precedence.
+    """
+    all_sequences = normal_sequences + hazardous_sequences
+    trie_root = build_prefix_trie(all_sequences)
+    root_id, dag_nodes = merge_equivalent_suffix_states(trie_root)
+
+    normal_edges = _collect_edge_pairs(normal_sequences)
+    hazardous_edges = _collect_edge_pairs(hazardous_sequences)
+
+    edge_colors: Dict[Tuple[str, str], str] = {}
+    for edge in normal_edges:
+        edge_colors[edge] = "#000000"
+    for edge in hazardous_edges:
+        edge_colors[edge] = "#E53E3E"
+
+    return render_process_dag_with_colored_edges(
+        root_id=root_id,
+        dag_nodes=dag_nodes,
+        edge_colors=edge_colors,
+        out_name=out_name,
+    )
 
 
 def main() -> None:
