@@ -176,6 +176,7 @@ def main() -> None:
     "Place vegetable on board",
     "Slice vegetable",
     "Wipe blade",
+    "Place knife on countertop"
     "Wash knife",
     "Dry knife",
     "Return knife to block" 

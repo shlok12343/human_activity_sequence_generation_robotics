@@ -1,0 +1,253 @@
+{
+  "knife_prep": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Remove knife from block",
+          "Place vegetable on board"
+        ],
+        "max_duration_seconds": 5,
+        "reasoning": "Holding an exposed blade in the manipulator while reaching to grasp and place a vegetable creates a high risk of accidental cuts, collisions, or dropping the knife."
+      },
+      {
+        "hazardous_subsequence": [
+          "Slice vegetable",
+          "Wipe blade"
+        ],
+        "max_duration_seconds": 5,
+        "reasoning": "Wiping an exposed blade is a high-dexterity, high-risk action. Pausing mid-wipe or leaving the robot unattended in this state creates an immediate laceration hazard if unexpected movement occurs."
+      },
+      {
+        "hazardous_subsequence": [
+          "Place knife on countertop",
+          "Wash knife"
+        ],
+        "max_duration_seconds": 15,
+        "reasoning": "Leaving an exposed, dirty knife unattended on a countertop poses a severe laceration hazard to humans reaching into the workspace, as well as a cross-contamination risk."
+      },
+      {
+        "hazardous_subsequence": [
+          "Wash knife",
+          "Dry knife"
+        ],
+        "max_duration_seconds": 10,
+        "reasoning": "Handling a wet, soapy, and slippery knife is dangerous. Pausing during this transition increases the risk of dropping the blade or leaving a hidden sharp hazard in or near the sink."
+      }
+    ]
+  },
+  "protein_prep": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "open fridge",
+          "take out protein"
+        ],
+        "max_duration_seconds": 60,
+        "reasoning": "Leaving the refrigerator door open causes rapid temperature loss, risking food spoilage and wasting energy."
+      },
+      {
+        "hazardous_subsequence": [
+          "Remove protein from packaging",
+          "Pat protein dry",
+          "Cut protein into pieces"
+        ],
+        "max_duration_seconds": 7200,
+        "reasoning": "Raw protein exposed to room temperature for extended periods enters the danger zone for rapid bacterial growth, leading to foodborne illness."
+      },
+      {
+        "hazardous_subsequence": [
+          "Cut protein into pieces",
+          "Place protein in hot pan",
+          "Wash hands with soap and water"
+        ],
+        "max_duration_seconds": 120,
+        "reasoning": "Robot end-effectors or hands are contaminated with raw meat juices. Delaying the hand-washing step increases the risk of cross-contaminating other kitchen surfaces."
+      },
+      {
+        "hazardous_subsequence": [
+          "Place protein in hot pan",
+          "Wash hands with soap and water",
+          "cook protein"
+        ],
+        "max_duration_seconds": 180,
+        "reasoning": "Unattended active cooking on a hot stove poses a severe fire hazard, risks burning the food, and can cause dangerous grease splatters."
+      }
+    ]
+  },
+  "oven_workflow": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Oven on"
+        ],
+        "max_duration_seconds": 1800,
+        "reasoning": "Leaving an empty oven on unattended for an extended period wastes energy and poses a fire hazard due to prolonged high temperatures."
+      },
+      {
+        "hazardous_subsequence": [
+          "Utensils in oven",
+          "Oven Used"
+        ],
+        "max_duration_seconds": 3600,
+        "reasoning": "Leaving items cooking in an active oven unattended for too long can cause the contents to severely burn, generating smoke and potentially starting a fire."
+      }
+    ]
+  },
+  "dishwasher_cycle": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Dishwasher is on",
+          "Add Dishwasher Detergent"
+        ],
+        "max_duration_seconds": 5,
+        "reasoning": "Opening the dishwasher to add detergent while it is actively on or running can cause hot water to spray out, risking burns and water damage."
+      },
+      {
+        "hazardous_subsequence": [
+          "Run the dishwasher",
+          "remove dishes"
+        ],
+        "max_duration_seconds": 5,
+        "reasoning": "Opening the dishwasher immediately after a run cycle releases scalding hot steam and the dishes are too hot to handle safely, risking severe burns. A cooldown period is required."
+      }
+    ]
+  },
+  "liquid_handling": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "open fridge",
+          "Get Liquid",
+          "Remove Liquids"
+        ],
+        "max_duration_seconds": 60,
+        "reasoning": "The refrigerator door is left open, which can lead to a rise in internal temperature, risking food spoilage and wasting energy."
+      },
+      {
+        "hazardous_subsequence": [
+          "Remove Liquids",
+          "close fridge",
+          "Pour Liquid"
+        ],
+        "max_duration_seconds": 7200,
+        "reasoning": "Perishable liquids left out at room temperature for extended periods can spoil and pose a risk of foodborne illness."
+      },
+      {
+        "hazardous_subsequence": [
+          "Pour Liquid"
+        ],
+        "max_duration_seconds": 5,
+        "reasoning": "Pouring liquid unattended can rapidly lead to overflow, creating spills, slip hazards, and potential electrical risks."
+      },
+      {
+        "hazardous_subsequence": [
+          "open fridge",
+          "Put back Liquid"
+        ],
+        "max_duration_seconds": 60,
+        "reasoning": "The refrigerator door is left open again, which compromises food safety by raising the internal temperature."
+      }
+    ]
+  },
+  "dairy_ingredients": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Open Fridge"
+        ],
+        "max_duration_seconds": 60,
+        "reasoning": "Leaving the refrigerator door open unattended causes internal temperatures to rise, risking spoilage of all stored food and excessive energy consumption."
+      },
+      {
+        "hazardous_subsequence": [
+          "Remove Ingredients",
+          "Use Ingredients"
+        ],
+        "max_duration_seconds": 1800,
+        "reasoning": "Dairy ingredients are highly perishable. Leaving them at room temperature for prolonged periods promotes rapid bacterial growth and foodborne illness risks."
+      },
+      {
+        "hazardous_subsequence": [
+          "Open Fridge",
+          "Remove Ingredients",
+          "Use Ingredients",
+          "Put back the ingredients"
+        ],
+        "max_duration_seconds": 180,
+        "reasoning": "Keeping the refrigerator door open for the entire duration of ingredient usage leads to severe temperature loss in the fridge, risking spoilage of all contents. The door should ideally be closed during use."
+      },
+      {
+        "hazardous_subsequence": [
+          "Put back the ingredients"
+        ],
+        "max_duration_seconds": 60,
+        "reasoning": "Stalling while putting ingredients back leaves the refrigerator door open and the robot arm potentially obstructing the closure, leading to rapid cooling loss."
+      }
+    ]
+  },
+  "kettle_use": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Heat On",
+          "Pour water"
+        ],
+        "max_duration_seconds": 5,
+        "reasoning": "Pouring water while the kettle's heating element is still active risks severe steam burns, splashing of boiling water, and electrical shock if water spills onto the live heating base."
+      },
+      {
+        "hazardous_subsequence": [
+          "Pour water",
+          "Heat Off"
+        ],
+        "max_duration_seconds": 10,
+        "reasoning": "Leaving the heat on during and immediately after pouring means the kettle may be returned to the base empty while still active, creating a high risk of a dry-boil fire hazard or melting the appliance."
+      }
+    ]
+  },
+  "toaster_use": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Toaster On",
+          "Remove Bread"
+        ],
+        "max_duration_seconds": 5,
+        "reasoning": "Attempting to remove bread while the toaster is actively powered on poses a severe risk of electric shock (especially if using utensils) and thermal burns."
+      }
+    ]
+  },
+  "air_fryer_use": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Air fryer on",
+          "Air fryer used"
+        ],
+        "max_duration_seconds": 1800,
+        "reasoning": "An operating air fryer generates intense heat. Leaving it unattended for an extended period can cause food to burn, smoke, or ignite, posing a severe fire hazard."
+      }
+    ]
+  },
+  "stove_use": {
+    "forbidden_transitions": [
+      {
+        "hazardous_subsequence": [
+          "Utensils on Stove",
+          "Stove On"
+        ],
+        "max_duration_seconds": 60,
+        "reasoning": "Leaving utensils on an active stove unattended while it heats up can cause empty cookware to rapidly overheat, potentially warping the pan, melting non-stick coatings, or igniting residual oils."
+      },
+      {
+        "hazardous_subsequence": [
+          "Stove On",
+          "Stove Used"
+        ],
+        "max_duration_seconds": 300,
+        "reasoning": "Active cooking left unattended poses a high risk of boil-overs, burning food, smoke generation, and severe grease fires."
+      }
+    ]
+  }
+}
