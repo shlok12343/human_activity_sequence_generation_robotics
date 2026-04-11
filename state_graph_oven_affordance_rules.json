@@ -1,0 +1,302 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "facts": {
+        "oven_power": "off",
+        "utensils_location": "countertop"
+      },
+      "label": "oven_power=off\nutensils_location=countertop"
+    },
+    {
+      "id": 1,
+      "facts": {
+        "oven_power": "on",
+        "utensils_location": "countertop"
+      },
+      "label": "oven_power=on\nutensils_location=countertop"
+    },
+    {
+      "id": 2,
+      "facts": {
+        "oven_power": "off",
+        "utensils_location": "held"
+      },
+      "label": "oven_power=off\nutensils_location=held"
+    },
+    {
+      "id": 3,
+      "facts": {
+        "oven_power": "on",
+        "utensils_location": "held"
+      },
+      "label": "oven_power=on\nutensils_location=held"
+    },
+    {
+      "id": 4,
+      "facts": {
+        "oven_power": "on",
+        "utensils_location": "oven"
+      },
+      "label": "oven_power=on\nutensils_location=oven"
+    },
+    {
+      "id": 5,
+      "facts": {
+        "oven_power": "off",
+        "utensils_location": "oven"
+      },
+      "label": "oven_power=off\nutensils_location=oven"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": 0,
+      "target_id": 1,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "utensils_location == 'countertop' or utensils_location == 'held' or utensils_location == 'oven'"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "The oven cannot transition to an 'On' state if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 0,
+      "target_id": 2,
+      "action": "Pick up utensils",
+      "preconditions": [
+        "utensils_location == 'countertop'"
+      ],
+      "invariants": [
+        "oven_power == 'off' or oven_power == 'on'"
+      ],
+      "effects": {
+        "utensils_location": "held"
+      },
+      "affordance_rule_refs": [
+        "Utensils cannot be placed in the oven without first being removed from the countertop."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 1,
+      "target_id": 3,
+      "action": "Pick up utensils",
+      "preconditions": [
+        "utensils_location == 'countertop'"
+      ],
+      "invariants": [
+        "oven_power == 'off' or oven_power == 'on'"
+      ],
+      "effects": {
+        "utensils_location": "held"
+      },
+      "affordance_rule_refs": [
+        "Utensils cannot be placed in the oven without first being removed from the countertop."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 1,
+      "target_id": 0,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "utensils_location == 'countertop' or utensils_location == 'held' or utensils_location == 'oven'"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "The oven cannot be turned off if it is not currently in an 'On' or 'Used' state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 2,
+      "target_id": 3,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "utensils_location == 'countertop' or utensils_location == 'held' or utensils_location == 'oven'"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "The oven cannot transition to an 'On' state if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 2,
+      "target_id": 0,
+      "action": "Place utensils on countertop",
+      "preconditions": [
+        "utensils_location == 'held'"
+      ],
+      "invariants": [
+        "oven_power == 'off' or oven_power == 'on'"
+      ],
+      "effects": {
+        "utensils_location": "countertop"
+      },
+      "affordance_rule_refs": [
+        "Utensils cannot be placed on the countertop from the oven without first being physically removed from the oven."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 3,
+      "target_id": 4,
+      "action": "Place utensils in oven",
+      "preconditions": [
+        "oven_power == 'on'",
+        "utensils_location == 'held'"
+      ],
+      "invariants": [
+        "oven_power == 'on'"
+      ],
+      "effects": {
+        "utensils_location": "oven"
+      },
+      "affordance_rule_refs": [
+        "Utensils cannot physically occupy the countertop and the inside of the oven simultaneously."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 3,
+      "target_id": 2,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "utensils_location == 'countertop' or utensils_location == 'held' or utensils_location == 'oven'"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "The oven cannot be turned off if it is not currently in an 'On' or 'Used' state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 3,
+      "target_id": 1,
+      "action": "Place utensils on countertop",
+      "preconditions": [
+        "utensils_location == 'held'"
+      ],
+      "invariants": [
+        "oven_power == 'off' or oven_power == 'on'"
+      ],
+      "effects": {
+        "utensils_location": "countertop"
+      },
+      "affordance_rule_refs": [
+        "Utensils cannot be placed on the countertop from the oven without first being physically removed from the oven."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 4,
+      "target_id": 5,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "utensils_location == 'countertop' or utensils_location == 'held' or utensils_location == 'oven'"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "The oven cannot be turned off if it is not currently in an 'On' or 'Used' state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 4,
+      "target_id": 3,
+      "action": "Remove utensils from oven",
+      "preconditions": [
+        "utensils_location == 'oven'"
+      ],
+      "invariants": [
+        "oven_power == 'off' or oven_power == 'on'"
+      ],
+      "effects": {
+        "utensils_location": "held"
+      },
+      "affordance_rule_refs": [
+        "Utensils cannot be removed from the oven if they are not currently located inside the oven."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 5,
+      "target_id": 4,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "utensils_location == 'countertop' or utensils_location == 'held' or utensils_location == 'oven'"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "The oven cannot transition to an 'On' state if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 5,
+      "target_id": 2,
+      "action": "Remove utensils from oven",
+      "preconditions": [
+        "utensils_location == 'oven'"
+      ],
+      "invariants": [
+        "oven_power == 'off' or oven_power == 'on'"
+      ],
+      "effects": {
+        "utensils_location": "held"
+      },
+      "affordance_rule_refs": [
+        "Utensils cannot be removed from the oven if they are not currently located inside the oven."
+      ],
+      "usage_count": 0
+    }
+  ],
+  "initial_state_ids": [
+    0
+  ],
+  "forbidden_transitions": [],
+  "consistency_report": {
+    "is_consistent": false,
+    "issues": [
+      "In the action 'Place utensils in oven', 'oven_power' is listed in 'from_conditions' but not in 'effects'. Variables that do not change state should only be listed in 'preconditions' and 'invariants', not in 'from_conditions'."
+    ],
+    "recommended_fixes": [
+      "Remove 'oven_power' from 'from_conditions' in the 'Place utensils in oven' action, as its state does not change."
+    ]
+  }
+}
