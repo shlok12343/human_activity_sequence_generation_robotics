@@ -1,0 +1,2322 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "in_fridge",
+        "protein_packaging": "packaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=in_fridge\nprotein_moisture=wet\nprotein_packaging=packaged"
+    },
+    {
+      "id": 1,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "in_fridge",
+        "protein_packaging": "packaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=in_fridge\nprotein_moisture=wet\nprotein_packaging=packaged"
+    },
+    {
+      "id": 2,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "packaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=packaged"
+    },
+    {
+      "id": 3,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "packaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=packaged"
+    },
+    {
+      "id": 4,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 5,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "packaged",
+        "protein_moisture": "wet",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=packaged"
+    },
+    {
+      "id": 6,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 7,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "packaged",
+        "protein_moisture": "wet",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=packaged"
+    },
+    {
+      "id": 8,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 9,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 10,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 11,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 12,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 13,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 14,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 15,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 16,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 17,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 18,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "whole",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=whole\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 19,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "wet",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=wet\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 20,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 21,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 22,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 23,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "workspace",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=workspace\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 24,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 25,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 26,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "raw",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=raw\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 27,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 28,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 29,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 30,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "in_pan",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=in_pan\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 31,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 32,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 33,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 34,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "cooked",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=cooked\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 35,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 36,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 37,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "consumed",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=dirty\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=consumed\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 38,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "resting_board",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=resting_board\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 39,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "consumed",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "dirty"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=dirty\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=consumed\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 40,
+      "facts": {
+        "fridge_door": "open",
+        "protein_location": "consumed",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=open\nhands_cleanliness=clean\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=consumed\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    },
+    {
+      "id": 41,
+      "facts": {
+        "fridge_door": "closed",
+        "protein_location": "consumed",
+        "protein_packaging": "unpackaged",
+        "protein_moisture": "dry",
+        "protein_cut": "cut",
+        "protein_cooking_status": "rested",
+        "hands_cleanliness": "clean"
+      },
+      "label": "fridge_door=closed\nhands_cleanliness=clean\nprotein_cooking_status=rested\nprotein_cut=cut\nprotein_location=consumed\nprotein_moisture=dry\nprotein_packaging=unpackaged"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": 0,
+      "target_id": 1,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 1,
+      "target_id": 2,
+      "action": "take out protein",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "protein_location == 'in_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "protein_location": "workspace"
+      },
+      "affordance_rule_refs": [
+        "You cannot take the protein out of the fridge before opening the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 1,
+      "target_id": 0,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 2,
+      "target_id": 3,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 2,
+      "target_id": 4,
+      "action": "Remove protein from packaging",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'packaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'"
+      ],
+      "effects": {
+        "protein_packaging": "unpackaged",
+        "hands_cleanliness": "dirty"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from its packaging before taking it out of the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 2,
+      "target_id": 5,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 3,
+      "target_id": 2,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 3,
+      "target_id": 6,
+      "action": "Remove protein from packaging",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'packaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'"
+      ],
+      "effects": {
+        "protein_packaging": "unpackaged",
+        "hands_cleanliness": "dirty"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from its packaging before taking it out of the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 3,
+      "target_id": 7,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 6,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 8,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 9,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 10,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 5,
+      "target_id": 7,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 5,
+      "target_id": 9,
+      "action": "Remove protein from packaging",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'packaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'"
+      ],
+      "effects": {
+        "protein_packaging": "unpackaged",
+        "hands_cleanliness": "dirty"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from its packaging before taking it out of the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 4,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 11,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 12,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 13,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 7,
+      "target_id": 5,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 7,
+      "target_id": 12,
+      "action": "Remove protein from packaging",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'packaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'"
+      ],
+      "effects": {
+        "protein_packaging": "unpackaged",
+        "hands_cleanliness": "dirty"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from its packaging before taking it out of the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 8,
+      "target_id": 11,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 8,
+      "target_id": 14,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 8,
+      "target_id": 15,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 9,
+      "target_id": 12,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 9,
+      "target_id": 14,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 9,
+      "target_id": 16,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 13,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 15,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 16,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 11,
+      "target_id": 8,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 11,
+      "target_id": 17,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 11,
+      "target_id": 18,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 12,
+      "target_id": 9,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 12,
+      "target_id": 17,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 12,
+      "target_id": 19,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 13,
+      "target_id": 10,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 13,
+      "target_id": 18,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 13,
+      "target_id": 19,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 17,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 20,
+      "action": "Place protein in hot pan",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_location": "in_pan"
+      },
+      "affordance_rule_refs": [
+        "You cannot place the protein in the hot pan while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 21,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 15,
+      "target_id": 18,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 15,
+      "target_id": 21,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 16,
+      "target_id": 19,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 16,
+      "target_id": 21,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 17,
+      "target_id": 14,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 17,
+      "target_id": 22,
+      "action": "Place protein in hot pan",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_location": "in_pan"
+      },
+      "affordance_rule_refs": [
+        "You cannot place the protein in the hot pan while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 17,
+      "target_id": 23,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 18,
+      "target_id": 15,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 18,
+      "target_id": 23,
+      "action": "Cut protein into pieces",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'whole'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_cut": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut the protein into pieces while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 19,
+      "target_id": 16,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 19,
+      "target_id": 23,
+      "action": "Pat protein dry",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'",
+        "protein_moisture == 'wet'"
+      ],
+      "invariants": [
+        "protein_location == 'workspace'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_moisture": "dry"
+      },
+      "affordance_rule_refs": [
+        "You cannot pat the protein dry while it is still enclosed in its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 20,
+      "target_id": 22,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 20,
+      "target_id": 24,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 20,
+      "target_id": 25,
+      "action": "cook protein",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'raw'"
+      ],
+      "invariants": [
+        "protein_location == 'in_pan'"
+      ],
+      "effects": {
+        "protein_cooking_status": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook the protein in the pan before placing it into the pan."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 21,
+      "target_id": 23,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 21,
+      "target_id": 24,
+      "action": "Place protein in hot pan",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_location": "in_pan"
+      },
+      "affordance_rule_refs": [
+        "You cannot place the protein in the hot pan while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 22,
+      "target_id": 20,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 22,
+      "target_id": 26,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 22,
+      "target_id": 27,
+      "action": "cook protein",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'raw'"
+      ],
+      "invariants": [
+        "protein_location == 'in_pan'"
+      ],
+      "effects": {
+        "protein_cooking_status": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook the protein in the pan before placing it into the pan."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 23,
+      "target_id": 21,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 23,
+      "target_id": 26,
+      "action": "Place protein in hot pan",
+      "preconditions": [
+        "protein_location == 'workspace'",
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "invariants": [
+        "protein_cut == 'cut'",
+        "protein_moisture == 'dry'",
+        "protein_packaging == 'unpackaged'"
+      ],
+      "effects": {
+        "protein_location": "in_pan"
+      },
+      "affordance_rule_refs": [
+        "You cannot place the protein in the hot pan while it is still inside its packaging."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 24,
+      "target_id": 26,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 24,
+      "target_id": 28,
+      "action": "cook protein",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'raw'"
+      ],
+      "invariants": [
+        "protein_location == 'in_pan'"
+      ],
+      "effects": {
+        "protein_cooking_status": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook the protein in the pan before placing it into the pan."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 25,
+      "target_id": 27,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 25,
+      "target_id": 28,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 25,
+      "target_id": 29,
+      "action": "Remove protein from heat",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'cooked'"
+      ],
+      "effects": {
+        "protein_location": "resting_board"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from the heat before it has been placed on the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 26,
+      "target_id": 24,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 26,
+      "target_id": 30,
+      "action": "cook protein",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'raw'"
+      ],
+      "invariants": [
+        "protein_location == 'in_pan'"
+      ],
+      "effects": {
+        "protein_cooking_status": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook the protein in the pan before placing it into the pan."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 27,
+      "target_id": 25,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 27,
+      "target_id": 30,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 27,
+      "target_id": 31,
+      "action": "Remove protein from heat",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'cooked'"
+      ],
+      "effects": {
+        "protein_location": "resting_board"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from the heat before it has been placed on the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 28,
+      "target_id": 30,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 28,
+      "target_id": 32,
+      "action": "Remove protein from heat",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'cooked'"
+      ],
+      "effects": {
+        "protein_location": "resting_board"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from the heat before it has been placed on the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 29,
+      "target_id": 31,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 29,
+      "target_id": 32,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 29,
+      "target_id": 33,
+      "action": "Let protein rest",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_location == 'resting_board'"
+      ],
+      "effects": {
+        "protein_cooking_status": "rested"
+      },
+      "affordance_rule_refs": [
+        "You cannot let the protein rest off the heat before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 30,
+      "target_id": 28,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 30,
+      "target_id": 34,
+      "action": "Remove protein from heat",
+      "preconditions": [
+        "protein_location == 'in_pan'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'cooked'"
+      ],
+      "effects": {
+        "protein_location": "resting_board"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove the protein from the heat before it has been placed on the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 31,
+      "target_id": 29,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 31,
+      "target_id": 34,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 31,
+      "target_id": 35,
+      "action": "Let protein rest",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_location == 'resting_board'"
+      ],
+      "effects": {
+        "protein_cooking_status": "rested"
+      },
+      "affordance_rule_refs": [
+        "You cannot let the protein rest off the heat before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 32,
+      "target_id": 34,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 32,
+      "target_id": 36,
+      "action": "Let protein rest",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_location == 'resting_board'"
+      ],
+      "effects": {
+        "protein_cooking_status": "rested"
+      },
+      "affordance_rule_refs": [
+        "You cannot let the protein rest off the heat before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 33,
+      "target_id": 35,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 33,
+      "target_id": 36,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 33,
+      "target_id": 37,
+      "action": "eat protein",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'rested'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'rested'"
+      ],
+      "effects": {
+        "protein_location": "consumed"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat the protein before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 34,
+      "target_id": 32,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 34,
+      "target_id": 38,
+      "action": "Let protein rest",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'cooked'"
+      ],
+      "invariants": [
+        "protein_location == 'resting_board'"
+      ],
+      "effects": {
+        "protein_cooking_status": "rested"
+      },
+      "affordance_rule_refs": [
+        "You cannot let the protein rest off the heat before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 35,
+      "target_id": 33,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 35,
+      "target_id": 38,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 35,
+      "target_id": 39,
+      "action": "eat protein",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'rested'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'rested'"
+      ],
+      "effects": {
+        "protein_location": "consumed"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat the protein before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 36,
+      "target_id": 38,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 36,
+      "target_id": 40,
+      "action": "eat protein",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'rested'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'rested'"
+      ],
+      "effects": {
+        "protein_location": "consumed"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat the protein before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 37,
+      "target_id": 39,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 37,
+      "target_id": 40,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 38,
+      "target_id": 36,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 38,
+      "target_id": 41,
+      "action": "eat protein",
+      "preconditions": [
+        "protein_location == 'resting_board'",
+        "protein_cooking_status == 'rested'"
+      ],
+      "invariants": [
+        "protein_cooking_status == 'rested'"
+      ],
+      "effects": {
+        "protein_location": "consumed"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat the protein before removing it from the heat."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 39,
+      "target_id": 37,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 39,
+      "target_id": 41,
+      "action": "Wash hands with soap and water",
+      "preconditions": [
+        "hands_cleanliness == 'dirty'"
+      ],
+      "invariants": [],
+      "effects": {
+        "hands_cleanliness": "clean"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 40,
+      "target_id": 41,
+      "action": "close fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge before it has been opened."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 41,
+      "target_id": 40,
+      "action": "open fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    }
+  ],
+  "initial_state_ids": [
+    0
+  ],
+  "forbidden_transitions": [],
+  "consistency_report": {
+    "is_consistent": false,
+    "issues": [
+      "In the transition 'Cut protein into pieces', the precondition \"protein_packaging == 'unpackaged'\" is present, but 'protein_packaging' is missing from the from_conditions.",
+      "In the transition 'Place protein in hot pan', the precondition \"protein_packaging == 'unpackaged'\" is present, but 'protein_packaging' is missing from the from_conditions."
+    ],
+    "recommended_fixes": [
+      "Add 'protein_packaging': 'unpackaged' to the from_conditions of the 'Cut protein into pieces' transition.",
+      "Add 'protein_packaging': 'unpackaged' to the from_conditions of the 'Place protein in hot pan' transition."
+    ]
+  }
+}

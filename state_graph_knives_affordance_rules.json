@@ -1,0 +1,912 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "in_block",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "elsewhere",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_block\nvegetable_location=elsewhere\nvegetable_state=whole"
+    },
+    {
+      "id": 1,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "in_block",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "elsewhere",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_block\nvegetable_location=elsewhere\nvegetable_state=whole"
+    },
+    {
+      "id": 2,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "in_block",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_block\nvegetable_location=on_board\nvegetable_state=whole"
+    },
+    {
+      "id": 3,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "elsewhere",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=elsewhere\nvegetable_state=whole"
+    },
+    {
+      "id": 4,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "in_block",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_block\nvegetable_location=on_board\nvegetable_state=whole"
+    },
+    {
+      "id": 5,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=on_board\nvegetable_state=whole"
+    },
+    {
+      "id": 6,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "elsewhere",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=elsewhere\nvegetable_state=whole"
+    },
+    {
+      "id": 7,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "elsewhere",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=elsewhere\nvegetable_state=whole"
+    },
+    {
+      "id": 8,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "dirty",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=dirty\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=on_board\nvegetable_state=sliced"
+    },
+    {
+      "id": 9,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=on_board\nvegetable_state=whole"
+    },
+    {
+      "id": 10,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=on_board\nvegetable_state=whole"
+    },
+    {
+      "id": 11,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "elsewhere",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=elsewhere\nvegetable_state=whole"
+    },
+    {
+      "id": 12,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "wiped",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=wiped\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=on_board\nvegetable_state=sliced"
+    },
+    {
+      "id": 13,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "dirty",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=dirty\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=on_board\nvegetable_state=sliced"
+    },
+    {
+      "id": 14,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "dirty",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=dirty\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=on_board\nvegetable_state=sliced"
+    },
+    {
+      "id": 15,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "clean",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "whole"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=clean\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=on_board\nvegetable_state=whole"
+    },
+    {
+      "id": 16,
+      "facts": {
+        "drawer_state": "open",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "wiped",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=open\nknife_cleanliness=wiped\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=on_board\nvegetable_state=sliced"
+    },
+    {
+      "id": 17,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "in_hand",
+        "knife_cleanliness": "wiped",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=wiped\nknife_dryness=dry\nknife_location=in_hand\nvegetable_location=on_board\nvegetable_state=sliced"
+    },
+    {
+      "id": 18,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "dirty",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=dirty\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=on_board\nvegetable_state=sliced"
+    },
+    {
+      "id": 19,
+      "facts": {
+        "drawer_state": "closed",
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "wiped",
+        "knife_dryness": "dry",
+        "vegetable_location": "on_board",
+        "vegetable_state": "sliced"
+      },
+      "label": "drawer_state=closed\nknife_cleanliness=wiped\nknife_dryness=dry\nknife_location=on_countertop\nvegetable_location=on_board\nvegetable_state=sliced"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": 0,
+      "target_id": 1,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 0,
+      "target_id": 2,
+      "action": "Place vegetable on board",
+      "preconditions": [
+        "vegetable_location == 'elsewhere'"
+      ],
+      "invariants": [],
+      "effects": {
+        "vegetable_location": "on_board"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 1,
+      "target_id": 3,
+      "action": "Remove knife from block",
+      "preconditions": [
+        "drawer_state == 'open'",
+        "knife_location == 'in_block'"
+      ],
+      "invariants": [
+        "drawer_state == 'open'"
+      ],
+      "effects": {
+        "knife_location": "in_hand"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove a knife from a block inside a drawer without first opening the drawer."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 1,
+      "target_id": 4,
+      "action": "Place vegetable on board",
+      "preconditions": [
+        "vegetable_location == 'elsewhere'"
+      ],
+      "invariants": [],
+      "effects": {
+        "vegetable_location": "on_board"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 1,
+      "target_id": 0,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 2,
+      "target_id": 4,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 3,
+      "target_id": 5,
+      "action": "Place vegetable on board",
+      "preconditions": [
+        "vegetable_location == 'elsewhere'"
+      ],
+      "invariants": [],
+      "effects": {
+        "vegetable_location": "on_board"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 3,
+      "target_id": 6,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 3,
+      "target_id": 7,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 5,
+      "action": "Remove knife from block",
+      "preconditions": [
+        "drawer_state == 'open'",
+        "knife_location == 'in_block'"
+      ],
+      "invariants": [
+        "drawer_state == 'open'"
+      ],
+      "effects": {
+        "knife_location": "in_hand"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove a knife from a block inside a drawer without first opening the drawer."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 2,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 5,
+      "target_id": 8,
+      "action": "Slice vegetable",
+      "preconditions": [
+        "knife_location == 'in_hand'",
+        "vegetable_location == 'on_board'",
+        "vegetable_state == 'whole'"
+      ],
+      "invariants": [
+        "knife_location == 'in_hand'",
+        "vegetable_location == 'on_board'"
+      ],
+      "effects": {
+        "vegetable_state": "sliced",
+        "knife_cleanliness": "dirty"
+      },
+      "affordance_rule_refs": [
+        "You cannot slice a vegetable with a knife while the knife is still secured inside its block.",
+        "You cannot slice a vegetable with a knife if the vegetable has not been placed into the physical workspace."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 5,
+      "target_id": 9,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 5,
+      "target_id": 10,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 9,
+      "action": "Place vegetable on board",
+      "preconditions": [
+        "vegetable_location == 'elsewhere'"
+      ],
+      "invariants": [],
+      "effects": {
+        "vegetable_location": "on_board"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 11,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 7,
+      "target_id": 3,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 7,
+      "target_id": 10,
+      "action": "Place vegetable on board",
+      "preconditions": [
+        "vegetable_location == 'elsewhere'"
+      ],
+      "invariants": [],
+      "effects": {
+        "vegetable_location": "on_board"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 7,
+      "target_id": 11,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 8,
+      "target_id": 12,
+      "action": "Wipe blade",
+      "preconditions": [
+        "knife_location == 'in_hand'",
+        "knife_cleanliness == 'dirty'"
+      ],
+      "invariants": [
+        "knife_location == 'in_hand'"
+      ],
+      "effects": {
+        "knife_cleanliness": "wiped"
+      },
+      "affordance_rule_refs": [
+        "You cannot wipe a knife blade while the blade is physically concealed inside a knife block."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 8,
+      "target_id": 13,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 8,
+      "target_id": 14,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 9,
+      "target_id": 15,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 5,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 14,
+      "action": "Slice vegetable",
+      "preconditions": [
+        "knife_location == 'in_hand'",
+        "vegetable_location == 'on_board'",
+        "vegetable_state == 'whole'"
+      ],
+      "invariants": [
+        "knife_location == 'in_hand'",
+        "vegetable_location == 'on_board'"
+      ],
+      "effects": {
+        "vegetable_state": "sliced",
+        "knife_cleanliness": "dirty"
+      },
+      "affordance_rule_refs": [
+        "You cannot slice a vegetable with a knife while the knife is still secured inside its block.",
+        "You cannot slice a vegetable with a knife if the vegetable has not been placed into the physical workspace."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 15,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 11,
+      "target_id": 6,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 11,
+      "target_id": 15,
+      "action": "Place vegetable on board",
+      "preconditions": [
+        "vegetable_location == 'elsewhere'"
+      ],
+      "invariants": [],
+      "effects": {
+        "vegetable_location": "on_board"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 12,
+      "target_id": 16,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 12,
+      "target_id": 17,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 13,
+      "target_id": 18,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 8,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 17,
+      "action": "Wipe blade",
+      "preconditions": [
+        "knife_location == 'in_hand'",
+        "knife_cleanliness == 'dirty'"
+      ],
+      "invariants": [
+        "knife_location == 'in_hand'"
+      ],
+      "effects": {
+        "knife_cleanliness": "wiped"
+      },
+      "affordance_rule_refs": [
+        "You cannot wipe a knife blade while the blade is physically concealed inside a knife block."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 18,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 15,
+      "target_id": 9,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 16,
+      "target_id": 19,
+      "action": "close drawer",
+      "preconditions": [
+        "drawer_state == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close a drawer containing a knife block if the drawer is already in a closed state."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 17,
+      "target_id": 12,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 17,
+      "target_id": 19,
+      "action": "Place knife on countertop",
+      "preconditions": [
+        "knife_location == 'in_hand'"
+      ],
+      "invariants": [],
+      "effects": {
+        "knife_location": "on_countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place a knife onto a countertop if the knife is not currently held in your hand."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 18,
+      "target_id": 13,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    },
+    {
+      "source_id": 19,
+      "target_id": 16,
+      "action": "open drawer",
+      "preconditions": [
+        "drawer_state == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "drawer_state": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 1
+    }
+  ],
+  "initial_state_ids": [
+    0
+  ],
+  "forbidden_transitions": [
+    {
+      "action": "Wash knife",
+      "from_conditions": {
+        "knife_location": "on_countertop",
+        "knife_cleanliness": "wiped"
+      },
+      "reason": "You cannot wash a knife while it remains resting unsupported on a countertop; it must be picked up first."
+    },
+    {
+      "action": "Return knife to block",
+      "from_conditions": {
+        "drawer_state": "open",
+        "knife_location": "on_countertop"
+      },
+      "reason": "You cannot return a knife to a block while the knife is still resting on the countertop."
+    }
+  ],
+  "consistency_report": {
+    "is_consistent": false,
+    "issues": [
+      "The action 'Dry knife' requires the precondition 'knife_dryness' == 'wet'. However, the initial state of 'knife_dryness' is 'dry', and there are no valid transitions in the state machine that change 'knife_dryness' to 'wet', making the 'Dry knife' action unreachable.",
+      "The forbidden transitions reference 'Wash knife' and 'Return knife to block', implying these actions should exist in the state machine. However, valid versions of these actions (e.g., performing them while 'knife_location' == 'in_hand') are missing from the grounded transitions."
+    ],
+    "recommended_fixes": [
+      "Add a valid 'Wash knife' transition with preconditions such as 'knife_location' == 'in_hand' that applies the effect 'knife_dryness': 'wet' (and potentially 'knife_cleanliness': 'clean').",
+      "Add a valid 'Return knife to block' transition with preconditions such as 'knife_location' == 'in_hand' and 'drawer_state' == 'open' that applies the effect 'knife_location': 'in_block'."
+    ]
+  }
+}

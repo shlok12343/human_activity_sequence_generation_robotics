@@ -469,40 +469,100 @@ def main() -> None:
             "GOOGLE_API_KEY is not set. Export it before running this script."
         )
 
-    base_sequence_oven = [
-        "Utensils on countertop",
-        "Oven on",
-        "Utensils in oven",
-        "Oven Used",
-        "Oven Off",
-        "Utensils removed from Oven",
-        "Utensils placed on countertop",
+    task_configs = [
+        {
+            "task_name": "oven",
+            "target_object": "oven",
+            "out_name": "state_graph_oven_affordance_rules",
+            "base_sequence": [
+                "Utensils on countertop",
+                "Oven on",
+                "Utensils in oven",
+                "Oven Used",
+                "Oven Off",
+                "Utensils removed from Oven",
+                "Utensils placed on countertop",
+            ],
+        },
+        {
+            "task_name": "vegetables",
+            "target_object": "vegetables",
+            "out_name": "state_graph_vegetables_affordance_rules",
+            "base_sequence": [
+                "Open Fridge",
+                "Take out vegetables",
+                "Close Fridge",
+                "Cut Vegetables",
+                "Open Fridge",
+                "Put back vegetables",
+                "Close Fridge",
+                "Cook vegetables",
+                "Eat vegetables",
+            ],
+        },
+        {
+            "task_name": "knives",
+            "target_object": "knives",
+            "out_name": "state_graph_knives_affordance_rules",
+            "base_sequence": [
+                "open drawer",
+                "Remove knife from block",
+                "Place vegetable on board",
+                "Slice vegetable",
+                "Wipe blade",
+                "Place knife on countertop",
+                "Wash knife",
+                "Dry knife",
+                "Return knife to block",
+                "close drawer",
+            ],
+        },
+        {
+            "task_name": "proteins",
+            "target_object": "protein",
+            "out_name": "state_graph_proteins_affordance_rules",
+            "base_sequence": [
+                "open fridge",
+                "take out protein",
+                "close fridge",
+                "Remove protein from packaging",
+                "Pat protein dry",
+                "Cut protein into pieces",
+                "Place protein in hot pan",
+                "Wash hands with soap and water",
+                "cook protein",
+                "Remove protein from heat",
+                "Let protein rest",
+                "eat protein",
+            ],
+        },
     ]
-    target_object_oven = "oven"
 
-    pipeline_output = run_state_graph_pipeline(
-        base_sequence=base_sequence_oven,
-        target_object=target_object_oven,
-        num_affordance_rules=10,
-    )
+    for config in task_configs:
+        print(f"\n=== Generating state graph for: {config['task_name']} ===")
+        pipeline_output = run_state_graph_pipeline(
+            base_sequence=config["base_sequence"],
+            target_object=config["target_object"],
+            num_affordance_rules=10,
+        )
 
-    validation_errors = validate_state_graph_output(pipeline_output.state_graph)
-    if validation_errors:
-        print("Validation issues:")
-        for issue in validation_errors:
-            print(f"- {issue}")
-    else:
-        print("Validation passed.")
+        validation_errors = validate_state_graph_output(pipeline_output.state_graph)
+        if validation_errors:
+            print("Validation issues:")
+            for issue in validation_errors:
+                print(f"- {issue}")
+        else:
+            print("Validation passed.")
 
-    png_path = render_state_graph(
-        pipeline_output.state_graph, out_name="state_graph_oven_affordance_rules"
-    )
-    json_path = export_state_graph_json(
-        pipeline_output.state_graph, out_name="state_graph_oven_affordance_rules"
-    )
+        png_path = render_state_graph(
+            pipeline_output.state_graph, out_name=config["out_name"]
+        )
+        json_path = export_state_graph_json(
+            pipeline_output.state_graph, out_name=config["out_name"]
+        )
 
-    print(f"State graph image saved to: {png_path}")
-    print(f"State graph JSON saved to: {json_path}")
+        print(f"State graph image saved to: {png_path}")
+        print(f"State graph JSON saved to: {json_path}")
 
 
 if __name__ == "__main__":

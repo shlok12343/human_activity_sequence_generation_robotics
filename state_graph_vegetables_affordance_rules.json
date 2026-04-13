@@ -1,0 +1,777 @@
+{
+  "nodes": [
+    {
+      "id": 0,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "whole"
+      },
+      "label": "fridge_door=closed\nvegetables_location=inside_fridge\nvegetables_state=whole"
+    },
+    {
+      "id": 1,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "whole"
+      },
+      "label": "fridge_door=open\nvegetables_location=inside_fridge\nvegetables_state=whole"
+    },
+    {
+      "id": 2,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "whole"
+      },
+      "label": "fridge_door=open\nvegetables_location=outside_fridge\nvegetables_state=whole"
+    },
+    {
+      "id": 3,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "whole"
+      },
+      "label": "fridge_door=closed\nvegetables_location=outside_fridge\nvegetables_state=whole"
+    },
+    {
+      "id": 4,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "cut"
+      },
+      "label": "fridge_door=open\nvegetables_location=outside_fridge\nvegetables_state=cut"
+    },
+    {
+      "id": 5,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "cut"
+      },
+      "label": "fridge_door=closed\nvegetables_location=outside_fridge\nvegetables_state=cut"
+    },
+    {
+      "id": 6,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "cut"
+      },
+      "label": "fridge_door=open\nvegetables_location=inside_fridge\nvegetables_state=cut"
+    },
+    {
+      "id": 7,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "cooked"
+      },
+      "label": "fridge_door=open\nvegetables_location=outside_fridge\nvegetables_state=cooked"
+    },
+    {
+      "id": 8,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "cooked"
+      },
+      "label": "fridge_door=closed\nvegetables_location=outside_fridge\nvegetables_state=cooked"
+    },
+    {
+      "id": 9,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "cut"
+      },
+      "label": "fridge_door=closed\nvegetables_location=inside_fridge\nvegetables_state=cut"
+    },
+    {
+      "id": 10,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "cooked"
+      },
+      "label": "fridge_door=open\nvegetables_location=inside_fridge\nvegetables_state=cooked"
+    },
+    {
+      "id": 11,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "eaten"
+      },
+      "label": "fridge_door=open\nvegetables_location=outside_fridge\nvegetables_state=eaten"
+    },
+    {
+      "id": 12,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "outside_fridge",
+        "vegetables_state": "eaten"
+      },
+      "label": "fridge_door=closed\nvegetables_location=outside_fridge\nvegetables_state=eaten"
+    },
+    {
+      "id": 13,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "cooked"
+      },
+      "label": "fridge_door=closed\nvegetables_location=inside_fridge\nvegetables_state=cooked"
+    },
+    {
+      "id": 14,
+      "facts": {
+        "fridge_door": "open",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "eaten"
+      },
+      "label": "fridge_door=open\nvegetables_location=inside_fridge\nvegetables_state=eaten"
+    },
+    {
+      "id": 15,
+      "facts": {
+        "fridge_door": "closed",
+        "vegetables_location": "inside_fridge",
+        "vegetables_state": "eaten"
+      },
+      "label": "fridge_door=closed\nvegetables_location=inside_fridge\nvegetables_state=eaten"
+    }
+  ],
+  "edges": [
+    {
+      "source_id": 0,
+      "target_id": 1,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 1,
+      "target_id": 2,
+      "action": "Take out vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'inside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "outside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot take vegetables out of the fridge before opening the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 1,
+      "target_id": 0,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 2,
+      "target_id": 3,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 2,
+      "target_id": 4,
+      "action": "Cut Vegetables",
+      "preconditions": [
+        "vegetables_location == 'outside_fridge'",
+        "vegetables_state == 'whole'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut vegetables while they are inside the closed fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 2,
+      "target_id": 1,
+      "action": "Put back vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "inside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot put vegetables back into the fridge before opening the fridge.",
+        "You cannot put vegetables back into the fridge if they have not been taken out first."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 3,
+      "target_id": 2,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 3,
+      "target_id": 5,
+      "action": "Cut Vegetables",
+      "preconditions": [
+        "vegetables_location == 'outside_fridge'",
+        "vegetables_state == 'whole'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "cut"
+      },
+      "affordance_rule_refs": [
+        "You cannot cut vegetables while they are inside the closed fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 5,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 4,
+      "target_id": 6,
+      "action": "Put back vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "inside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot put vegetables back into the fridge before opening the fridge.",
+        "You cannot put vegetables back into the fridge if they have not been taken out first."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 4,
+      "target_id": 7,
+      "action": "Cook vegetables",
+      "preconditions": [
+        "vegetables_state == 'cut'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook vegetables while they are inside the fridge.",
+        "You cannot cook cut vegetables before cutting them."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 5,
+      "target_id": 4,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 5,
+      "target_id": 8,
+      "action": "Cook vegetables",
+      "preconditions": [
+        "vegetables_state == 'cut'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook vegetables while they are inside the fridge.",
+        "You cannot cook cut vegetables before cutting them."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 4,
+      "action": "Take out vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'inside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "outside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot take vegetables out of the fridge before opening the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 6,
+      "target_id": 9,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 6,
+      "target_id": 10,
+      "action": "Cook vegetables",
+      "preconditions": [
+        "vegetables_state == 'cut'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook vegetables while they are inside the fridge.",
+        "You cannot cook cut vegetables before cutting them."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 7,
+      "target_id": 8,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 7,
+      "target_id": 10,
+      "action": "Put back vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "inside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot put vegetables back into the fridge before opening the fridge.",
+        "You cannot put vegetables back into the fridge if they have not been taken out first."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 7,
+      "target_id": 11,
+      "action": "Eat vegetables",
+      "preconditions": [
+        "vegetables_state == 'cooked'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "eaten"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat cooked vegetables before cooking them.",
+        "You cannot eat vegetables while they are inside the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 8,
+      "target_id": 7,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 8,
+      "target_id": 12,
+      "action": "Eat vegetables",
+      "preconditions": [
+        "vegetables_state == 'cooked'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "eaten"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat cooked vegetables before cooking them.",
+        "You cannot eat vegetables while they are inside the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 9,
+      "target_id": 6,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 9,
+      "target_id": 13,
+      "action": "Cook vegetables",
+      "preconditions": [
+        "vegetables_state == 'cut'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "cooked"
+      },
+      "affordance_rule_refs": [
+        "You cannot cook vegetables while they are inside the fridge.",
+        "You cannot cook cut vegetables before cutting them."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 7,
+      "action": "Take out vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'inside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "outside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot take vegetables out of the fridge before opening the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 10,
+      "target_id": 13,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 10,
+      "target_id": 14,
+      "action": "Eat vegetables",
+      "preconditions": [
+        "vegetables_state == 'cooked'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "eaten"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat cooked vegetables before cooking them.",
+        "You cannot eat vegetables while they are inside the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 11,
+      "target_id": 12,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 11,
+      "target_id": 14,
+      "action": "Put back vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "inside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot put vegetables back into the fridge before opening the fridge.",
+        "You cannot put vegetables back into the fridge if they have not been taken out first."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 12,
+      "target_id": 11,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 13,
+      "target_id": 10,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 13,
+      "target_id": 15,
+      "action": "Eat vegetables",
+      "preconditions": [
+        "vegetables_state == 'cooked'",
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "invariants": [
+        "vegetables_location == 'outside_fridge'"
+      ],
+      "effects": {
+        "vegetables_state": "eaten"
+      },
+      "affordance_rule_refs": [
+        "You cannot eat cooked vegetables before cooking them.",
+        "You cannot eat vegetables while they are inside the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 11,
+      "action": "Take out vegetables",
+      "preconditions": [
+        "fridge_door == 'open'",
+        "vegetables_location == 'inside_fridge'"
+      ],
+      "invariants": [
+        "fridge_door == 'open'"
+      ],
+      "effects": {
+        "vegetables_location": "outside_fridge"
+      },
+      "affordance_rule_refs": [
+        "You cannot take vegetables out of the fridge before opening the fridge."
+      ],
+      "usage_count": 1
+    },
+    {
+      "source_id": 14,
+      "target_id": 15,
+      "action": "Close Fridge",
+      "preconditions": [
+        "fridge_door == 'open'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "closed"
+      },
+      "affordance_rule_refs": [
+        "You cannot close the fridge if it is already closed."
+      ],
+      "usage_count": 2
+    },
+    {
+      "source_id": 15,
+      "target_id": 14,
+      "action": "Open Fridge",
+      "preconditions": [
+        "fridge_door == 'closed'"
+      ],
+      "invariants": [],
+      "effects": {
+        "fridge_door": "open"
+      },
+      "affordance_rule_refs": [
+        "You cannot open the fridge if it is currently open."
+      ],
+      "usage_count": 2
+    }
+  ],
+  "initial_state_ids": [
+    0
+  ],
+  "forbidden_transitions": [],
+  "consistency_report": {
+    "is_consistent": false,
+    "issues": [
+      "In the 'Cook vegetables' action, 'vegetables_location == \\'outside_fridge\\'' is listed in the preconditions but is missing from the from_conditions.",
+      "In the 'Eat vegetables' action, 'vegetables_location == \\'outside_fridge\\'' is listed in the preconditions but is missing from the from_conditions.",
+      "The actions 'Open Fridge' and 'Close Fridge' are duplicated in the transitions list."
+    ],
+    "recommended_fixes": [
+      "Add 'vegetables_location': 'outside_fridge' to the from_conditions of the 'Cook vegetables' action.",
+      "Add 'vegetables_location': 'outside_fridge' to the from_conditions of the 'Eat vegetables' action.",
+      "Remove the duplicate entries for the 'Open Fridge' and 'Close Fridge' actions."
+    ]
+  }
+}
