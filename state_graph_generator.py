@@ -383,10 +383,7 @@ def render_state_graph(state_graph: StateGraph, out_name: str) -> str:
         dot.node(f"n{node.id}", node.label if node.label else f"state_{node.id}")
 
     for edge in state_graph.edges:
-        pre = ", ".join(edge.preconditions) if edge.preconditions else "-"
-        inv = ", ".join(edge.invariants) if edge.invariants else "-"
-        label = f"{edge.action}\npre: {pre}\ninv: {inv}"
-        dot.edge(f"n{edge.source_id}", f"n{edge.target_id}", label=label)
+        dot.edge(f"n{edge.source_id}", f"n{edge.target_id}")
 
     return dot.render(filename=out_name, cleanup=True)
 

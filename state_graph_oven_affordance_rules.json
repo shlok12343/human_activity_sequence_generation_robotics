@@ -5,108 +5,240 @@
       "facts": {
         "oven_power": "off",
         "oven_door": "closed",
-        "utensils_location": "countertop"
+        "utensils_location": "countertop",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=closed\noven_power=off\nutensils_location=countertop"
+      "label": "oven_door=closed\noven_power=off\nutensils_location=countertop\nutensils_state=unheated"
     },
     {
       "id": 1,
       "facts": {
         "oven_power": "on",
         "oven_door": "closed",
-        "utensils_location": "countertop"
+        "utensils_location": "countertop",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=closed\noven_power=on\nutensils_location=countertop"
+      "label": "oven_door=closed\noven_power=on\nutensils_location=countertop\nutensils_state=unheated"
     },
     {
       "id": 2,
       "facts": {
         "oven_power": "off",
         "oven_door": "open",
-        "utensils_location": "countertop"
+        "utensils_location": "countertop",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=open\noven_power=off\nutensils_location=countertop"
+      "label": "oven_door=open\noven_power=off\nutensils_location=countertop\nutensils_state=unheated"
     },
     {
       "id": 3,
       "facts": {
         "oven_power": "off",
         "oven_door": "closed",
-        "utensils_location": "in_hand"
+        "utensils_location": "in_hand",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=closed\noven_power=off\nutensils_location=in_hand"
+      "label": "oven_door=closed\noven_power=off\nutensils_location=in_hand\nutensils_state=unheated"
     },
     {
       "id": 4,
       "facts": {
         "oven_power": "on",
         "oven_door": "open",
-        "utensils_location": "countertop"
+        "utensils_location": "countertop",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=open\noven_power=on\nutensils_location=countertop"
+      "label": "oven_door=open\noven_power=on\nutensils_location=countertop\nutensils_state=unheated"
     },
     {
       "id": 5,
       "facts": {
         "oven_power": "on",
         "oven_door": "closed",
-        "utensils_location": "in_hand"
+        "utensils_location": "in_hand",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=closed\noven_power=on\nutensils_location=in_hand"
+      "label": "oven_door=closed\noven_power=on\nutensils_location=in_hand\nutensils_state=unheated"
     },
     {
       "id": 6,
       "facts": {
         "oven_power": "off",
         "oven_door": "open",
-        "utensils_location": "in_hand"
+        "utensils_location": "in_hand",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=open\noven_power=off\nutensils_location=in_hand"
+      "label": "oven_door=open\noven_power=off\nutensils_location=in_hand\nutensils_state=unheated"
     },
     {
       "id": 7,
       "facts": {
         "oven_power": "on",
         "oven_door": "open",
-        "utensils_location": "in_hand"
+        "utensils_location": "in_hand",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=open\noven_power=on\nutensils_location=in_hand"
+      "label": "oven_door=open\noven_power=on\nutensils_location=in_hand\nutensils_state=unheated"
     },
     {
       "id": 8,
       "facts": {
         "oven_power": "off",
         "oven_door": "open",
-        "utensils_location": "inside_oven"
+        "utensils_location": "oven",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=open\noven_power=off\nutensils_location=inside_oven"
+      "label": "oven_door=open\noven_power=off\nutensils_location=oven\nutensils_state=unheated"
     },
     {
       "id": 9,
       "facts": {
         "oven_power": "on",
         "oven_door": "open",
-        "utensils_location": "inside_oven"
+        "utensils_location": "oven",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=open\noven_power=on\nutensils_location=inside_oven"
+      "label": "oven_door=open\noven_power=on\nutensils_location=oven\nutensils_state=unheated"
     },
     {
       "id": 10,
       "facts": {
         "oven_power": "off",
         "oven_door": "closed",
-        "utensils_location": "inside_oven"
+        "utensils_location": "oven",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=closed\noven_power=off\nutensils_location=inside_oven"
+      "label": "oven_door=closed\noven_power=off\nutensils_location=oven\nutensils_state=unheated"
     },
     {
       "id": 11,
       "facts": {
         "oven_power": "on",
         "oven_door": "closed",
-        "utensils_location": "inside_oven"
+        "utensils_location": "oven",
+        "utensils_state": "unheated"
       },
-      "label": "oven_door=closed\noven_power=on\nutensils_location=inside_oven"
+      "label": "oven_door=closed\noven_power=on\nutensils_location=oven\nutensils_state=unheated"
+    },
+    {
+      "id": 12,
+      "facts": {
+        "oven_power": "on",
+        "oven_door": "closed",
+        "utensils_location": "oven",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=closed\noven_power=on\nutensils_location=oven\nutensils_state=heated"
+    },
+    {
+      "id": 13,
+      "facts": {
+        "oven_power": "on",
+        "oven_door": "open",
+        "utensils_location": "oven",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=open\noven_power=on\nutensils_location=oven\nutensils_state=heated"
+    },
+    {
+      "id": 14,
+      "facts": {
+        "oven_power": "off",
+        "oven_door": "closed",
+        "utensils_location": "oven",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=closed\noven_power=off\nutensils_location=oven\nutensils_state=heated"
+    },
+    {
+      "id": 15,
+      "facts": {
+        "oven_power": "off",
+        "oven_door": "open",
+        "utensils_location": "oven",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=open\noven_power=off\nutensils_location=oven\nutensils_state=heated"
+    },
+    {
+      "id": 16,
+      "facts": {
+        "oven_power": "on",
+        "oven_door": "open",
+        "utensils_location": "in_hand",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=open\noven_power=on\nutensils_location=in_hand\nutensils_state=heated"
+    },
+    {
+      "id": 17,
+      "facts": {
+        "oven_power": "off",
+        "oven_door": "open",
+        "utensils_location": "in_hand",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=open\noven_power=off\nutensils_location=in_hand\nutensils_state=heated"
+    },
+    {
+      "id": 18,
+      "facts": {
+        "oven_power": "on",
+        "oven_door": "closed",
+        "utensils_location": "in_hand",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=closed\noven_power=on\nutensils_location=in_hand\nutensils_state=heated"
+    },
+    {
+      "id": 19,
+      "facts": {
+        "oven_power": "on",
+        "oven_door": "open",
+        "utensils_location": "countertop",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=open\noven_power=on\nutensils_location=countertop\nutensils_state=heated"
+    },
+    {
+      "id": 20,
+      "facts": {
+        "oven_power": "off",
+        "oven_door": "closed",
+        "utensils_location": "in_hand",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=closed\noven_power=off\nutensils_location=in_hand\nutensils_state=heated"
+    },
+    {
+      "id": 21,
+      "facts": {
+        "oven_power": "off",
+        "oven_door": "open",
+        "utensils_location": "countertop",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=open\noven_power=off\nutensils_location=countertop\nutensils_state=heated"
+    },
+    {
+      "id": 22,
+      "facts": {
+        "oven_power": "on",
+        "oven_door": "closed",
+        "utensils_location": "countertop",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=closed\noven_power=on\nutensils_location=countertop\nutensils_state=heated"
+    },
+    {
+      "id": 23,
+      "facts": {
+        "oven_power": "off",
+        "oven_door": "closed",
+        "utensils_location": "countertop",
+        "utensils_state": "heated"
+      },
+      "label": "oven_door=closed\noven_power=off\nutensils_location=countertop\nutensils_state=heated"
     }
   ],
   "edges": [
@@ -119,13 +251,14 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "on"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven on if it is already in the on state."
+        "You cannot turn on the oven if it is already turned on."
       ],
       "usage_count": 0
     },
@@ -138,7 +271,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "open"
@@ -155,10 +289,29 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "in_hand"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 0,
+      "target_id": 2,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
       },
       "affordance_rule_refs": [],
       "usage_count": 0
@@ -172,7 +325,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "open"
@@ -189,7 +343,8 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "in_hand"
@@ -206,14 +361,34 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "off"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven off if it is already in the off state."
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 1,
+      "target_id": 4,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     },
     {
@@ -225,13 +400,14 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "on"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven on if it is already in the on state."
+        "You cannot turn on the oven if it is already turned on."
       ],
       "usage_count": 0
     },
@@ -244,7 +420,8 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "in_hand"
@@ -261,7 +438,26 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 2,
+      "target_id": 0,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "closed"
@@ -278,13 +474,14 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "on"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven on if it is already in the on state."
+        "You cannot turn on the oven if it is already turned on."
       ],
       "usage_count": 0
     },
@@ -297,7 +494,26 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 3,
+      "target_id": 6,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "open"
@@ -314,14 +530,14 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "countertop"
       },
       "affordance_rule_refs": [
-        "You cannot place utensils on the countertop if they are currently physically inside the oven.",
-        "You cannot place utensils back onto the countertop without first removing them from the oven."
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
       ],
       "usage_count": 0
     },
@@ -334,7 +550,8 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "in_hand"
@@ -351,7 +568,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "closed"
@@ -368,14 +586,34 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "off"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven off if it is already in the off state."
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 4,
+      "target_id": 1,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     },
     {
@@ -387,7 +625,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "open"
@@ -404,14 +643,34 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "off"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven off if it is already in the off state."
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 5,
+      "target_id": 7,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     },
     {
@@ -423,14 +682,14 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "countertop"
       },
       "affordance_rule_refs": [
-        "You cannot place utensils on the countertop if they are currently physically inside the oven.",
-        "You cannot place utensils back onto the countertop without first removing them from the oven."
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
       ],
       "usage_count": 0
     },
@@ -443,13 +702,14 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "on"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven on if it is already in the on state."
+        "You cannot turn on the oven if it is already turned on."
       ],
       "usage_count": 0
     },
@@ -462,14 +722,15 @@
         "oven_door == 'open'"
       ],
       "invariants": [
-        "oven_power"
+        "oven_power",
+        "utensils_state"
       ],
       "effects": {
-        "utensils_location": "inside_oven"
+        "utensils_location": "oven"
       },
       "affordance_rule_refs": [
-        "You cannot place utensils into the oven if they are already located inside the oven.",
-        "You cannot place utensils into the oven directly without first lifting them from the countertop."
+        "You cannot place utensils into the oven if they are already inside the oven.",
+        "You cannot place utensils into the oven without first picking them up from the countertop."
       ],
       "usage_count": 0
     },
@@ -482,7 +743,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "closed"
@@ -499,15 +761,33 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "countertop"
       },
       "affordance_rule_refs": [
-        "You cannot place utensils on the countertop if they are currently physically inside the oven.",
-        "You cannot place utensils back onto the countertop without first removing them from the oven."
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 6,
+      "target_id": 3,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     },
     {
@@ -519,14 +799,15 @@
         "oven_door == 'open'"
       ],
       "invariants": [
-        "oven_power"
+        "oven_power",
+        "utensils_state"
       ],
       "effects": {
-        "utensils_location": "inside_oven"
+        "utensils_location": "oven"
       },
       "affordance_rule_refs": [
-        "You cannot place utensils into the oven if they are already located inside the oven.",
-        "You cannot place utensils into the oven directly without first lifting them from the countertop."
+        "You cannot place utensils into the oven if they are already inside the oven.",
+        "You cannot place utensils into the oven without first picking them up from the countertop."
       ],
       "usage_count": 0
     },
@@ -539,7 +820,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "closed"
@@ -556,13 +838,15 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "off"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven off if it is already in the off state."
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
       ],
       "usage_count": 0
     },
@@ -575,15 +859,33 @@
       ],
       "invariants": [
         "oven_power",
-        "oven_door"
+        "oven_door",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "countertop"
       },
       "affordance_rule_refs": [
-        "You cannot place utensils on the countertop if they are currently physically inside the oven.",
-        "You cannot place utensils back onto the countertop without first removing them from the oven."
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 7,
+      "target_id": 5,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     },
     {
@@ -595,13 +897,14 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "on"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven on if it is already in the on state."
+        "You cannot turn on the oven if it is already turned on."
       ],
       "usage_count": 0
     },
@@ -614,7 +917,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "closed"
@@ -627,20 +931,38 @@
       "target_id": 6,
       "action": "Remove utensils from oven",
       "preconditions": [
-        "utensils_location == 'inside_oven'",
+        "utensils_location == 'oven'",
         "oven_door == 'open'"
       ],
       "invariants": [
-        "oven_power"
+        "oven_power",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "in_hand"
       },
       "affordance_rule_refs": [
-        "You cannot remove utensils from the oven before they have been placed inside it.",
-        "You cannot remove utensils from the oven if the oven is empty.",
-        "You cannot remove utensils from the oven while they are still resting on the countertop."
+        "You cannot remove utensils from the oven before placing them inside.",
+        "You cannot remove utensils from the oven if they are currently on the countertop."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 8,
+      "target_id": 10,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     },
     {
@@ -652,7 +974,8 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "closed"
@@ -669,13 +992,15 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "off"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven off if it is already in the off state."
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
       ],
       "usage_count": 0
     },
@@ -684,20 +1009,38 @@
       "target_id": 7,
       "action": "Remove utensils from oven",
       "preconditions": [
-        "utensils_location == 'inside_oven'",
+        "utensils_location == 'oven'",
         "oven_door == 'open'"
       ],
       "invariants": [
-        "oven_power"
+        "oven_power",
+        "utensils_state"
       ],
       "effects": {
         "utensils_location": "in_hand"
       },
       "affordance_rule_refs": [
-        "You cannot remove utensils from the oven before they have been placed inside it.",
-        "You cannot remove utensils from the oven if the oven is empty.",
-        "You cannot remove utensils from the oven while they are still resting on the countertop."
+        "You cannot remove utensils from the oven before placing them inside.",
+        "You cannot remove utensils from the oven if they are currently on the countertop."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 9,
+      "target_id": 11,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     },
     {
@@ -709,13 +1052,14 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "on"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven on if it is already in the on state."
+        "You cannot turn on the oven if it is already turned on."
       ],
       "usage_count": 0
     },
@@ -728,7 +1072,26 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 10,
+      "target_id": 8,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "open"
@@ -745,12 +1108,37 @@
       ],
       "invariants": [
         "oven_power",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_door": "open"
       },
       "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 11,
+      "target_id": 12,
+      "action": "Heat utensils",
+      "preconditions": [
+        "oven_power == 'on'",
+        "oven_door == 'closed'",
+        "utensils_location == 'oven'",
+        "utensils_state == 'unheated'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_location"
+      ],
+      "effects": {
+        "utensils_state": "heated"
+      },
+      "affordance_rule_refs": [
+        "You cannot use the oven for cooking if it is not turned on.",
+        "You cannot use the oven to heat utensils if the utensils are still on the countertop."
+      ],
       "usage_count": 0
     },
     {
@@ -762,14 +1150,948 @@
       ],
       "invariants": [
         "oven_door",
-        "utensils_location"
+        "utensils_location",
+        "utensils_state"
       ],
       "effects": {
         "oven_power": "off"
       },
       "affordance_rule_refs": [
-        "You cannot turn the oven off if it is already in the off state."
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
       ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 11,
+      "target_id": 9,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 12,
+      "target_id": 13,
+      "action": "Open oven door",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 12,
+      "target_id": 14,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 12,
+      "target_id": 13,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 13,
+      "target_id": 12,
+      "action": "Close oven door",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 13,
+      "target_id": 15,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 13,
+      "target_id": 16,
+      "action": "Remove utensils from oven",
+      "preconditions": [
+        "utensils_location == 'oven'",
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "in_hand"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove utensils from the oven before placing them inside.",
+        "You cannot remove utensils from the oven if they are currently on the countertop."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 13,
+      "target_id": 12,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 14,
+      "target_id": 12,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn on the oven if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 14,
+      "target_id": 15,
+      "action": "Open oven door",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 14,
+      "target_id": 15,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 15,
+      "target_id": 13,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn on the oven if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 15,
+      "target_id": 14,
+      "action": "Close oven door",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 15,
+      "target_id": 17,
+      "action": "Remove utensils from oven",
+      "preconditions": [
+        "utensils_location == 'oven'",
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "in_hand"
+      },
+      "affordance_rule_refs": [
+        "You cannot remove utensils from the oven before placing them inside.",
+        "You cannot remove utensils from the oven if they are currently on the countertop."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 15,
+      "target_id": 14,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 16,
+      "target_id": 13,
+      "action": "Place utensils in oven",
+      "preconditions": [
+        "utensils_location == 'in_hand'",
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "oven"
+      },
+      "affordance_rule_refs": [
+        "You cannot place utensils into the oven if they are already inside the oven.",
+        "You cannot place utensils into the oven without first picking them up from the countertop."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 16,
+      "target_id": 18,
+      "action": "Close oven door",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 16,
+      "target_id": 17,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 16,
+      "target_id": 19,
+      "action": "Place utensils on countertop",
+      "preconditions": [
+        "utensils_location == 'in_hand'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 16,
+      "target_id": 18,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 17,
+      "target_id": 16,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn on the oven if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 17,
+      "target_id": 15,
+      "action": "Place utensils in oven",
+      "preconditions": [
+        "utensils_location == 'in_hand'",
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "oven"
+      },
+      "affordance_rule_refs": [
+        "You cannot place utensils into the oven if they are already inside the oven.",
+        "You cannot place utensils into the oven without first picking them up from the countertop."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 17,
+      "target_id": 20,
+      "action": "Close oven door",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 17,
+      "target_id": 21,
+      "action": "Place utensils on countertop",
+      "preconditions": [
+        "utensils_location == 'in_hand'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 17,
+      "target_id": 20,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 18,
+      "target_id": 16,
+      "action": "Open oven door",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 18,
+      "target_id": 20,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 18,
+      "target_id": 16,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 18,
+      "target_id": 22,
+      "action": "Place utensils on countertop",
+      "preconditions": [
+        "utensils_location == 'in_hand'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 19,
+      "target_id": 16,
+      "action": "Pick up utensils",
+      "preconditions": [
+        "utensils_location == 'countertop'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "in_hand"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 19,
+      "target_id": 22,
+      "action": "Close oven door",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 19,
+      "target_id": 21,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 19,
+      "target_id": 22,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 20,
+      "target_id": 18,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn on the oven if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 20,
+      "target_id": 17,
+      "action": "Open oven door",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 20,
+      "target_id": 17,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 20,
+      "target_id": 23,
+      "action": "Place utensils on countertop",
+      "preconditions": [
+        "utensils_location == 'in_hand'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "countertop"
+      },
+      "affordance_rule_refs": [
+        "You cannot place utensils on the countertop from the oven before removing them from the oven."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 21,
+      "target_id": 19,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn on the oven if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 21,
+      "target_id": 17,
+      "action": "Pick up utensils",
+      "preconditions": [
+        "utensils_location == 'countertop'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "in_hand"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 21,
+      "target_id": 23,
+      "action": "Close oven door",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 21,
+      "target_id": 23,
+      "action": "Close oven door after use",
+      "preconditions": [
+        "oven_door == 'open'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "closed"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 22,
+      "target_id": 19,
+      "action": "Open oven door",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 22,
+      "target_id": 18,
+      "action": "Pick up utensils",
+      "preconditions": [
+        "utensils_location == 'countertop'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "in_hand"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 22,
+      "target_id": 23,
+      "action": "Turn off oven",
+      "preconditions": [
+        "oven_power == 'on'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "off"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn off the oven if it has not been turned on first.",
+        "You cannot turn off the oven while it is already in the off state."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 22,
+      "target_id": 19,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 23,
+      "target_id": 22,
+      "action": "Turn on oven",
+      "preconditions": [
+        "oven_power == 'off'"
+      ],
+      "invariants": [
+        "oven_door",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_power": "on"
+      },
+      "affordance_rule_refs": [
+        "You cannot turn on the oven if it is already turned on."
+      ],
+      "usage_count": 0
+    },
+    {
+      "source_id": 23,
+      "target_id": 21,
+      "action": "Open oven door",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 23,
+      "target_id": 20,
+      "action": "Pick up utensils",
+      "preconditions": [
+        "utensils_location == 'countertop'"
+      ],
+      "invariants": [
+        "oven_power",
+        "oven_door",
+        "utensils_state"
+      ],
+      "effects": {
+        "utensils_location": "in_hand"
+      },
+      "affordance_rule_refs": [],
+      "usage_count": 0
+    },
+    {
+      "source_id": 23,
+      "target_id": 21,
+      "action": "Open oven door to remove utensils",
+      "preconditions": [
+        "oven_door == 'closed'"
+      ],
+      "invariants": [
+        "oven_power",
+        "utensils_location",
+        "utensils_state"
+      ],
+      "effects": {
+        "oven_door": "open"
+      },
+      "affordance_rule_refs": [],
       "usage_count": 0
     }
   ],
@@ -778,8 +2100,14 @@
   ],
   "forbidden_transitions": [],
   "consistency_report": {
-    "is_consistent": true,
-    "issues": [],
-    "recommended_fixes": []
+    "is_consistent": false,
+    "issues": [
+      "In the action 'Place utensils in oven', the variable 'oven_door' is included in 'from_conditions' but is missing from both 'effects' and 'invariants'. Since its value does not change, it should be listed as an invariant.",
+      "In the action 'Remove utensils from oven', the variable 'oven_door' is included in 'from_conditions' but is missing from both 'effects' and 'invariants'. Since its value does not change, it should be listed as an invariant."
+    ],
+    "recommended_fixes": [
+      "Add 'oven_door' to the 'invariants' list for the 'Place utensils in oven' transition.",
+      "Add 'oven_door' to the 'invariants' list for the 'Remove utensils from oven' transition."
+    ]
   }
 }
