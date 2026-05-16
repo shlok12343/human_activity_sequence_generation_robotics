@@ -16,7 +16,9 @@ from pathlib import Path
 from typing import List, Optional
 
 from soda_can_problem.defaults import (
+    DEFAULT_GEMINI_TIMEOUT_SECONDS,
     DEFAULT_HAZARD_BATCH_SIZE,
+    DEFAULT_HAZARD_MODEL_NAME,
     DEFAULT_MODEL_NAME,
     DEFAULT_NUM_AFFORDANCE_RULES,
     DEFAULT_ORIGINAL_OBJECTS,
@@ -93,7 +95,35 @@ def main() -> None:
         "--model",
         type=str,
         default=DEFAULT_MODEL_NAME,
-        help=f"Gemini model name (default {DEFAULT_MODEL_NAME}).",
+        help=(
+            f"Gemini model for steps 2-3 (discovery + state graphs; "
+            f"default {DEFAULT_MODEL_NAME})."
+        ),
+    )
+    parser.add_argument(
+        "--hazard-model",
+        type=str,
+        default=DEFAULT_HAZARD_MODEL_NAME,
+        help=(
+            f"Gemini model for step 5 hazard batches only "
+            f"(default {DEFAULT_HAZARD_MODEL_NAME})."
+        ),
+    )
+    parser.add_argument(
+        "--timeout",
+        type=float,
+        default=DEFAULT_GEMINI_TIMEOUT_SECONDS,
+        help=(
+            f"Per-call timeout in seconds for step 5 hazard API calls "
+            f"(default {DEFAULT_GEMINI_TIMEOUT_SECONDS})."
+        ),
+    )
+    parser.add_argument(
+        "--fresh-hazard",
+        action="store_true",
+        help=(
+            "Ignore step5_checkpoint.json and re-run all hazard batches from scratch."
+        ),
     )
     args = parser.parse_args()
 
@@ -110,6 +140,9 @@ def main() -> None:
         hazard_batch_size=args.hazard_batch_size,
         num_affordance_rules=args.num_affordance_rules,
         model_name=args.model,
+        hazard_model_name=args.hazard_model,
+        timeout_seconds=args.timeout,
+        fresh_hazard=args.fresh_hazard,
     )
 
 

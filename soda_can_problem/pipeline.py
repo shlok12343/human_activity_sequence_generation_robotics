@@ -9,7 +9,9 @@ from typing import Any, Dict, List, Optional
 
 from soda_can_problem.combinations import build_combinations
 from soda_can_problem.defaults import (
+    DEFAULT_GEMINI_TIMEOUT_SECONDS,
     DEFAULT_HAZARD_BATCH_SIZE,
+    DEFAULT_HAZARD_MODEL_NAME,
     DEFAULT_MODEL_NAME,
     DEFAULT_ORIGINAL_OBJECTS,
     DEFAULT_NUM_AFFORDANCE_RULES,
@@ -34,6 +36,9 @@ def run_all(
     hazard_batch_size: int = DEFAULT_HAZARD_BATCH_SIZE,
     num_affordance_rules: int = DEFAULT_NUM_AFFORDANCE_RULES,
     model_name: str = DEFAULT_MODEL_NAME,
+    hazard_model_name: str = DEFAULT_HAZARD_MODEL_NAME,
+    timeout_seconds: float = DEFAULT_GEMINI_TIMEOUT_SECONDS,
+    fresh_hazard: bool = False,
 ) -> Path:
     """
     Run steps 2-5 and write JSON under ``output_dir``.
@@ -97,7 +102,11 @@ def run_all(
 
     # -- Step 4: expand combinations (original x state x interaction_target) ---
     print("Step 4: expanding combinations...")
-    combinations = build_combinations(graphs_by_original, interactions_by_object)
+    combinations = build_combinations(
+        graphs_by_original,
+        interactions_by_object,
+        originals,
+    )
     if max_combinations is not None and max_combinations >= 0:
         combinations = combinations[:max_combinations]
     step4_path = out / "step4_combinations.json"
@@ -106,22 +115,28 @@ def run_all(
     print(f"  {len(combinations)} combinations -> {step4_path}")
 
     # -- Step 5: Gemini hazard batches -----------------------------------------
-    print("Step 5: Gemini hazard batches...")
+    n_combos = len(combinations)
+    n_hazard_calls = (
+        (n_combos + hazard_batch_size - 1) // hazard_batch_size if n_combos else 0
+    )
+    print(
+        f"Step 5: Gemini hazard batches "
+        f"({n_hazard_calls} API calls, batch_size={hazard_batch_size}, "
+        f"model={hazard_model_name}, timeout={timeout_seconds}s, "
+        f"{n_combos} combinations)..."
+    )
     assessments = evaluate_all_combinations(
         combinations,
         batch_size=hazard_batch_size,
-        model_name=model_name,
+        hazard_model_name=hazard_model_name,
+        timeout_seconds=timeout_seconds,
+        output_dir=out,
+        fresh_hazard=fresh_hazard,
     )
-    assessments_dump = [a.model_dump() for a in assessments]
     step5_path = out / "step5_all_assessments.json"
-    with open(step5_path, "w", encoding="utf-8") as f:
-        json.dump(assessments_dump, f, indent=2)
-    print(f"  wrote {step5_path}")
-
-    hazardous = [a.model_dump() for a in assessments if a.hazardous]
     haz_path = out / "hazardous_combinations.json"
-    with open(haz_path, "w", encoding="utf-8") as f:
-        json.dump(hazardous, f, indent=2)
-    print(f"  {len(hazardous)} hazardous rows -> {haz_path}")
+    n_hazardous = sum(1 for a in assessments if a.hazardous)
+    print(f"  wrote {step5_path} ({len(assessments)} assessments)")
+    print(f"  {n_hazardous} hazardous rows -> {haz_path}")
 
     return out

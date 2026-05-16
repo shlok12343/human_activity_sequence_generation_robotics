@@ -55,6 +55,10 @@ def discover_interactions(
     )
     llm = build_llm(model_name=model_name, temperature=DEFAULT_TEMPERATURE_DISCOVERY)
     chain = prompt | llm | parser
+    print(
+        f"  [Gemini] interaction discovery (1 call, {len(original_objects)} objects)...",
+        flush=True,
+    )
     result: InteractionDiscoveryOutput = chain.invoke(
         {
             "objects_block": objects_block,
@@ -66,6 +70,7 @@ def discover_interactions(
         return s.strip().lower().replace("-", "_")
 
     rows_by_norm = {norm_slug(row.object_name): row for row in result.objects}
+    print("  [Gemini] interaction discovery done.", flush=True)
 
     out: Dict[str, List[str]] = {}
     for canon in original_objects:

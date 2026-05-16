@@ -96,6 +96,7 @@ def ensure_graph_for_interaction(
     meta_path = graphs_dir / f"{slug}.meta.json"
 
     if not skip_cache and cache_path.is_file():
+        print(f"    [cache] state graph for {interaction_raw!r} (skip Gemini)", flush=True)
         with open(cache_path, encoding="utf-8") as f:
             graph_dict = json.load(f)
         nodes = graph_dict.get("nodes") or []
@@ -123,6 +124,11 @@ def ensure_graph_for_interaction(
             validate_state_graph_output,
         )
 
+        print(
+            f"    [Gemini] state graph for {interaction_raw!r} "
+            f"(~5 API calls via run_state_graph_pipeline)...",
+            flush=True,
+        )
         pipeline_output = run_state_graph_pipeline(
             base_sequence=base_sequence,
             target_object=target_object,
@@ -146,6 +152,10 @@ def ensure_graph_for_interaction(
         )
 
     node_count = len(graph_dict.get("nodes") or [])
+    print(
+        f"    [Gemini] state graph for {interaction_raw!r} done ({node_count} nodes).",
+        flush=True,
+    )
     with open(cache_path, "w", encoding="utf-8") as f:
         json.dump(graph_dict, f, indent=2)
     with open(meta_path, "w", encoding="utf-8") as f:
