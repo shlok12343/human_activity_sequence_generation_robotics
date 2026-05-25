@@ -107,6 +107,7 @@ def run_all(
         interactions_by_object,
         originals,
     )
+    
     if max_combinations is not None and max_combinations >= 0:
         combinations = combinations[:max_combinations]
     step4_path = out / "step4_combinations.json"

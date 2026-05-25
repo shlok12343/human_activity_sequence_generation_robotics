@@ -5,6 +5,8 @@ DEFAULT_ORIGINAL_OBJECTS: tuple[str, ...] = (
     "metal_fork",
     "oven",
     "microwave",
+    "metal_spoon",
+    "plastic_container",
     )
 
 DEFAULT_MODEL_NAME = "gemini-3.1-pro-preview"

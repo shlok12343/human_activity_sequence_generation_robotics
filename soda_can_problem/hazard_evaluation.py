@@ -5,7 +5,7 @@ from __future__ import annotations
 import json
 import time
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import List, Optional
 
 from langchain_core.output_parsers import PydanticOutputParser
 from langchain_core.prompts import ChatPromptTemplate
@@ -18,6 +18,7 @@ from soda_can_problem.defaults import (
     DEFAULT_HAZARD_MODEL_NAME,
     DEFAULT_TEMPERATURE_HAZARD,
 )
+from soda_can_problem.combinations import CombinationDict
 from soda_can_problem.gemini_client import build_llm
 from soda_can_problem.schemas import HazardAssessmentItem, HazardBatchOutput
 
@@ -26,7 +27,7 @@ ALL_ASSESSMENTS_FILENAME = "step5_all_assessments.json"
 HAZARDOUS_FILENAME = "hazardous_combinations.json"
 
 
-def _combo_payload(row: Dict[str, Any]) -> str:
+def _combo_payload(row: CombinationDict) -> str:
     payload = {
         "original_object": row["original_object"],
         "original_object_state": row["original_object_state"],
@@ -155,7 +156,7 @@ def _load_checkpoint(
 
 
 def evaluate_hazard_batch(
-    combinations_batch: List[Dict[str, Any]],
+    combinations_batch: List[CombinationDict],
     *,
     model_name: str = DEFAULT_HAZARD_MODEL_NAME,
     timeout_seconds: float = DEFAULT_GEMINI_TIMEOUT_SECONDS,
@@ -230,7 +231,7 @@ def evaluate_hazard_batch(
 
 
 def evaluate_all_combinations(
-    combinations: List[Dict[str, Any]],
+    combinations: List[CombinationDict],
     *,
     batch_size: int = DEFAULT_HAZARD_BATCH_SIZE,
     hazard_model_name: str = DEFAULT_HAZARD_MODEL_NAME,
